@@ -1,0 +1,63 @@
+Download
+https://dist.ipfs.io/#go-ipfs
+
+Instalação
+tar xvfz go-ipfs.tar.gz
+cd go-ipfs
+./install.sh
+
+Testar instalação
+ipfs help
+
+Definir o path do diretório do ipfs com a variável $IPFS_PATH
+export IPFS_PATH=/path/to/ipfsrepoexho
+
+- criar o repositório do IPFS
+ipfs init
+
+- ler o readme
+ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
+
+- Adicionar um arquivo
+ipfs add helloworld/index.html
+added QmPXhrxiAC4MiijcFYNx9Y4pqQbpayEqznEHdags3LjkQf index.html
+
+added QmPXhrxiAC4MiijcFYNx9Y4pqQbpayEqznEHdags3LjkQf helloworld/index.html
+added QmdeRW9S7HGTat3QXQyGbcoHHSUCgjxqkThuLQLUfQz6E6 helloworld
+
+- para baixar um arquivo
+ipfs get QmPXhrxiAC4MiijcFYNx9Y4pqQbpayEqznEHdags3LjkQf
+
+- para visualizar 
+ipfs cat QmPXhrxiAC4MiijcFYNx9Y4pqQbpayEqznEHdags3LjkQf
+
+*** Até aqui estamos locais
+
+- Agora vamos conectar a rede 
+ipfs daemon
+com debug ipfs --debug daemon
+Informações da rede
+ipfs id
+{
+        "ID": "QmTdcKcbYmQ3ztbwKFSKAWaUdfb7T2XefVnabWrrsBgJWT",
+        "PublicKey": "CAASpgIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDIMQbFC8Bimv6blmHEBn8QzfdDMtwg29l3hGcZ9BAWfRwOQi1lHckQS5pdk7Im2ysKwc/FAnLwolTvz4qNVewp+98m6ksbb0Gj0D73dX1oI7dl9ArudZ3YUambrVUZQdgHslE2fq2e6kfpky1ZjtCoo+1EPIUPN0OLvxpfW1y2LZnoOoN+Sagw4AdUHuZ5hd6wXXgb1qphLgmEgHQt8MXzO0XO7u3nQa10qPVbZgJCMvQRfuw2uDynuUacdcgKFNv5ACciiMickPFwMZsiQ6v/ct2w1pk2MxE7Rx65awSWFhf9plO3/P82ot9SBNMcURi+NvlhacRq+RFbelDoHSadAgMBAAE=",
+        "Addresses": null,
+        "AgentVersion": "go-ipfs/0.4.15/",
+        "ProtocolVersion": "ipfs/0.1.0"
+}
+
+
+- Listar os peers
+ipfs swarm peers
+
+- Consultar um peers
+ipfs id <hash>
+
+- Interagir com seus arquivos
+localhost:8080/ipfs/<hash>
+
+- Acessar a interface do ipfs
+127.0.0.1:5001/webui
+
+- Testar o hash 
+https://ipfs.io/ipfs/<hash>

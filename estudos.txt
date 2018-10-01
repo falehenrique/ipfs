@@ -1,0 +1,9 @@
+https://ipfs.io
+https://ipfs.io/ipfs/QmV9tSDx9UiPeWExXEeH6aoDvmihvx6jD5eLb4jbTaKGps
+https://medium.com/coinmonks/a-hands-on-introduction-to-ipfs-ee65b594937
+https://medium.com/coinmonks/how-to-add-site-to-ipfs-and-ipns-f121b4cfc8ee
+
+IPFS serves content, but content can be much wider than just a pdf-file.
+Application logic is content as well. In combination with other decentralized projects like Ethereum,
+IPFS is extremely powerful as well. A blockchain like Ethereum can then serve as the back-end of your App, while the front-end is served by IPFS.
+This makes for a completely decentralized application.

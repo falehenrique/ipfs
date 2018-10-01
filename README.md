@@ -1,1 +1,1 @@
-# ipfs
+# We make websites and web apps have no central origin server, they can be distributed just like the Bitcoin network is distributed. — Juan Benet
